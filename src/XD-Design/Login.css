@@ -1,0 +1,298 @@
+/* Full-screen container for the login page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+.login-page {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  height: 100dvh; 
+  justify-content: center;
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; 
+  position: relative; 
+  z-index: 2; 
+  width: 100%; 
+}
+
+/* Logo styling */
+.main-logo {
+  width:  113.64; /* Adjust logo size */
+  height: 73.13;
+  padding: 3vw 0;
+}
+
+/* Layer image styling */
+.layer-img {
+  width: 100%;
+  position: absolute;
+}
+
+/* Full-page background color container */
+.form-container {
+  width: 50vw; /* Ensure it spans the entire width */
+  position: relative; /* So it stays underneath the form */
+  z-index: 1; /* Keeps the background color behind the form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 1vw;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+
+/* Form container */
+.form {
+  background-color: #0D557E; /* Background color */
+  width: 100%; /* Full width */
+  padding: 3vw;
+  box-sizing: border-box;
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Styling for welcome and login details text */
+.welcome-text {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: poppins;
+  margin-top:-2vw ;
+}
+
+.login-details {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: poppins;
+}
+
+/* Flex container for input fields and icons */
+.input-container {
+  position: relative;
+  margin-bottom: 20px; /* Space between inputs */
+  width: 100%;
+}
+
+.input-container input::placeholder{
+    font-family: poppins;
+    color: white;
+    font-size: 16;
+   
+}
+
+/* Styling for input fields */
+.input-container input {
+  width: 100%;
+  padding:15px 40px; /* Add padding for icon inside input */
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid white;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #0D557E; /* White background for inputs */
+}
+
+/* Position icons inside the input fields */
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 23.06;
+  color: white;
+}
+
+/* Styling for the remember me checkbox and forgot password link */
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.checkbox-container label {
+  font-size: 14px;
+  color: white;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the login button */
+.login-button {
+  width: 10vw;
+  padding: 12px;
+  background-color: white; /* Dark blue background */
+  color: #003366;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.top-layer{
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    top: -5vh;
+    left: 0;
+    right: 0;
+}
+
+
+/* Position icons inside the input fields */
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: white;
+}
+
+/* Position the eye icon to the right side of the input */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 25.83;
+  color: white;
+}
+
+/* Optional: Add hover effect for eye icon */
+.eye-icon:hover {
+  color: white;
+}
